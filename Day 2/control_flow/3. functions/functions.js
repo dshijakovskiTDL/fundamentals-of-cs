@@ -6,7 +6,7 @@
 // ! Then we write the name of the function, followed by parentheses
 // ! We can optionally add `input parameters` inside the parentheses
 function my_function() {
-	console.log("Hey there! I'm a function that prints this cool message!")
+	console.log('Hey there! I am a function that prints this cool message!')
 }
 
 // ! To call `my_function`, we just write out its name followed by parentheses

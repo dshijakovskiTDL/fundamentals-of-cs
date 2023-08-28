@@ -24,4 +24,4 @@ while (startIndex <= endIndex) {
 }
 
 if (elementFound) console.log('We found the element!')
-else console.log("The element doesn't exist in the array.")
+else console.log('The element does not exist in the array.')
