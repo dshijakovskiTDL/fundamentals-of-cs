@@ -11,7 +11,6 @@ def my_function():
 # ! To call `my_function`, we just write out its name followed by parentheses
 my_function()
 
-
 # * Functions with inputs
 
 # Most of the time, we will need our functions to take in some kind of input

@@ -11,7 +11,7 @@
     Loop until the startIndex is is smaller than or equal to the endIndex:
         Calculate middleIndex <- (startIndex + endIndex) / 2
         Get element at index middleIndex <- myArray[middleIndex]
-        
+
         If targetElement is equal to element:
             elementFound <- TRUE
             Break out of loop

@@ -11,22 +11,22 @@ let len = myList.length // We don't have to do this, its just for convenience
 // ! Well, we know that we need to loop through the list and do something with it
 // ! Okay then, let's just write that and start from there
 
-// ? for (let i = 0; i < len; i++) 
+// ? for (let i = 0; i < len; i++)
 
 // ! So, using this loop, let's try and get the current element and the next element
 // ! and compare the two. If they are in the wrong order, let's just print out "Wrong order"
 // ! just to see how that would look like
 
 for (let i = 0; i < len; i++) {
-    let currentElement = myList[i] 
-    // We call it the currentElement (the element at index i)
-    // because it's position in the array,
-    // corresponds with the CURRENT value of `i` in the loop
+	let currentElement = myList[i]
+	// We call it the currentElement (the element at index i)
+	// because it's position in the array,
+	// corresponds with the CURRENT value of `i` in the loop
 
-    let nextElement = myList[i + 1]
-    // We call it the next element (the element at index i + 1)
-    // because it's position in the array,
-    // corresponds with the NEXT value of `i` in the loop
+	let nextElement = myList[i + 1]
+	// We call it the next element (the element at index i + 1)
+	// because it's position in the array,
+	// corresponds with the NEXT value of `i` in the loop
 }
 
 // * If we run the above loop, we will get an error

@@ -15,7 +15,7 @@
 // ! some kind of a change to our conditions (ex. increment the i variable so that the condition check is different next time)
 
 for (let i = 0; i < 10; i++) {
-    console.log(i, "Hey there!")
+	console.log(i, 'Hey there!')
 }
 
 // for -> keyword for starting a for loop
@@ -23,7 +23,6 @@ for (let i = 0; i < 10; i++) {
 //  2. The code inside the block runs, we call each execution of the code - one iteration
 //  3. i < 10 -> the condition, this piece of code checks whether or not to continue executing the code
 // 4. i++, this is the piece of code that runs if the condition above is met. It runs BEFORE THE NEXT ITERATION
-
 
 // * The order in which these steps occur is as follows:
 // * INITIALIZATION - i = 0

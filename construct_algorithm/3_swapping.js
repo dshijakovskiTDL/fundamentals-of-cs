@@ -19,17 +19,17 @@ let myList = [4, 2, 6, 2, 8, 0, 1, 5]
 //  Remember, we are going from 0 to N - 2,
 //  to get the current and next element in the same iteration
 for (let i = 0; i < myList.length - 1; i++) {
-    //  Let's put the current and next elements in their own variables
-    //  Just to have a bit of a cleaner code and understand what's going on
-    let currentElement = myList[i]
-    let nextElement = myList[i + 1]
+	//  Let's put the current and next elements in their own variables
+	//  Just to have a bit of a cleaner code and understand what's going on
+	let currentElement = myList[i]
+	let nextElement = myList[i + 1]
 
-    // If they are in the wrong order
-    if (currentElement > nextElement) {
-        // SWAP HERE - we don't know what that looks like yet
-        // but this is how the code would look like
-        console.log('We are swapping them...')
-    }
+	// If they are in the wrong order
+	if (currentElement > nextElement) {
+		// SWAP HERE - we don't know what that looks like yet
+		// but this is how the code would look like
+		console.log('We are swapping them...')
+	}
 }
 
 // * So let's see how swapping works with a simple example
@@ -66,12 +66,12 @@ b = temp // THEN `b` gets assigned the value of `temp` (AKA the previous value o
 // ! IMPORTANT: We will not use the helper variables currentElement and nextElement now
 // ! IMPORTANT: That is because we need to ALTER THE ARRAY ITSELF
 for (let i = 0; i < myList.length - 1; i++) {
-    if (myList[i] > myList[i + 1]) {
-        // Swap
-        let temp = myList[i]
-        myList[i] = myList[i + 1]
-        myList[i + 1] = temp
-    }
+	if (myList[i] > myList[i + 1]) {
+		// Swap
+		let temp = myList[i]
+		myList[i] = myList[i + 1]
+		myList[i + 1] = temp
+	}
 }
 
 // ! Nice! We have performed ONE ITERATION of the Bubble Sort algorithm

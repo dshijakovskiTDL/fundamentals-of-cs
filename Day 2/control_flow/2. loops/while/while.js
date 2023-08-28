@@ -2,8 +2,8 @@
 
 let i = 0
 while (i < 10) {
-    console.log(i, "Hey there!")
-    i++
+	console.log(i, 'Hey there!')
+	i++
 }
 
 // while - keyword for starting a while loop

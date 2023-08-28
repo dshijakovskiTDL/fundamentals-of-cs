@@ -5,12 +5,12 @@ let myList = [4, 2, 6, 2, 8, 0, 1, 5]
 
 // ! Quick recap, this is what we have made so far
 for (let i = 0; i < myList.length - 1; i++) {
-    if (myList[i] > myList[i + 1]) {
-        // Swap
-        let temp = myList[i]
-        myList[i] = myList[i + 1]
-        myList[i + 1] = temp
-    }
+	if (myList[i] > myList[i + 1]) {
+		// Swap
+		let temp = myList[i]
+		myList[i] = myList[i + 1]
+		myList[i + 1] = temp
+	}
 }
 
 // ! After the loop, this is how the array looks like
@@ -20,7 +20,6 @@ for (let i = 0; i < myList.length - 1; i++) {
 // ! What we need next is just to DO THAT MULTIPLE TIMES
 // ! Well, we know that if we need to do something multiple times -> we need a loop
 
-
 // ! Okay, but what would that loop look like?
 // ! Well, if we have an array of N elements, and we need to sort all of them
 // ! AND we also have the above algorithm, which sorts 1 element
@@ -28,24 +27,22 @@ for (let i = 0; i < myList.length - 1; i++) {
 // ! Well, let's do that, take the above algorithm, and wrap it in a loop
 
 // Outer loop
-for(let k = 0; k < myList.length; k++) {
-
-    // Our algorithm from before - sorts 1 element correctly
-    for (let i = 0; i < myList.length - 1; i++) {
-        if (myList[i] > myList[i + 1]) {
-            // Swap
-            let temp = myList[i]
-            myList[i] = myList[i + 1]
-            myList[i + 1] = temp
-        }
-    }
-
+for (let k = 0; k < myList.length; k++) {
+	// Our algorithm from before - sorts 1 element correctly
+	for (let i = 0; i < myList.length - 1; i++) {
+		if (myList[i] > myList[i + 1]) {
+			// Swap
+			let temp = myList[i]
+			myList[i] = myList[i + 1]
+			myList[i + 1] = temp
+		}
+	}
 }
 
 // ! Let's see what we have as the resulting array
 console.log(myList)
 
-// ! Hurray 🎉 
+// ! Hurray 🎉
 // ! We have successfully sorted our array! (no rhyme intended)
 // ! That's it really, that's how the bubble sort algorithm works!
 

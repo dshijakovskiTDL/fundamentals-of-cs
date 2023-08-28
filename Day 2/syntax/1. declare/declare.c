@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-
-
     // Declare the variable without assigning it a value
     int age;
 

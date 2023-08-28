@@ -4,18 +4,16 @@
 let myList = [4, 2, 6, 2, 8, 0, 1, 5]
 
 // ! Okay, so our current optimized algorithm looks like this:
-// * Bubble sort algorithm - outer loop optimized 
-for(let k = 0; k < myList.length - 1; k++) {
-
-    for (let i = 0; i < myList.length - 1; i++) {
-        if (myList[i] > myList[i + 1]) {
-            // Swap
-            let temp = myList[i]
-            myList[i] = myList[i + 1]
-            myList[i + 1] = temp
-        }
-    }
-
+// * Bubble sort algorithm - outer loop optimized
+for (let k = 0; k < myList.length - 1; k++) {
+	for (let i = 0; i < myList.length - 1; i++) {
+		if (myList[i] > myList[i + 1]) {
+			// Swap
+			let temp = myList[i]
+			myList[i] = myList[i + 1]
+			myList[i + 1] = temp
+		}
+	}
 }
 
 // * 2. Optimizing the inner loop
@@ -69,7 +67,6 @@ let smallArray = [30, 20, 10]
 // * Each iteration of the OUTER LOOP (where k goes from 0 to N-1)
 // * -> The INNER LOOP needs to check `k` less elements
 
-
 // ! Here's the logic behind it
 // * Outer loop 1st iteration STARTS -> k = 0 (0 elements have been sorted)
 // * -> Inner loop needs to check 0 less elements
@@ -90,15 +87,13 @@ let smallArray = [30, 20, 10]
 
 // ! And finally, our optimized algorithm now looks like this:
 // * Bubble Sort algorithm - optimized
-for(let k = 0; k < myList.length - 1; k++) {
-
-    for (let i = 0; i < myList.length - 1 - k; i++) {
-        if (myList[i] > myList[i + 1]) {
-            // Swap
-            let temp = myList[i]
-            myList[i] = myList[i + 1]
-            myList[i + 1] = temp
-        }
-    }
-
+for (let k = 0; k < myList.length - 1; k++) {
+	for (let i = 0; i < myList.length - 1 - k; i++) {
+		if (myList[i] > myList[i + 1]) {
+			// Swap
+			let temp = myList[i]
+			myList[i] = myList[i + 1]
+			myList[i + 1] = temp
+		}
+	}
 }

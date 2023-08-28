@@ -8,24 +8,22 @@
 // ! And if our algorithms aren't optimized, they can perform
 // ! MANY redundant operations which will just take more time
 
-// ! So let's try to optimize this thing! 💪 
+// ! So let's try to optimize this thing! 💪
 
 // ! Pikachu, I choose you!
 let myList = [4, 2, 6, 2, 8, 0, 1, 5]
 
 // ! Now let's write out Bubble Sort algorithm again
-// * Bubble sort algorithm - not optimized 
-for(let k = 0; k < myList.length; k++) {
-
-    for (let i = 0; i < myList.length - 1; i++) {
-        if (myList[i] > myList[i + 1]) {
-            // Swap
-            let temp = myList[i]
-            myList[i] = myList[i + 1]
-            myList[i + 1] = temp
-        }
-    }
-
+// * Bubble sort algorithm - not optimized
+for (let k = 0; k < myList.length; k++) {
+	for (let i = 0; i < myList.length - 1; i++) {
+		if (myList[i] > myList[i + 1]) {
+			// Swap
+			let temp = myList[i]
+			myList[i] = myList[i + 1]
+			myList[i + 1] = temp
+		}
+	}
 }
 
 // * 1. Optimizing the outer loop
@@ -54,17 +52,15 @@ let smallArray = [30, 20, 10]
 
 // ! So our improved algorithm now looks like this
 // * Bubble Sort algorithm - outer loop optimized
-for(let k = 0; k < myList.length - 1; k++) {
-
-    for (let i = 0; i < myList.length - 1; i++) {
-        if (myList[i] > myList[i + 1]) {
-            // Swap
-            let temp = myList[i]
-            myList[i] = myList[i + 1]
-            myList[i + 1] = temp
-        }
-    }
-
+for (let k = 0; k < myList.length - 1; k++) {
+	for (let i = 0; i < myList.length - 1; i++) {
+		if (myList[i] > myList[i + 1]) {
+			// Swap
+			let temp = myList[i]
+			myList[i] = myList[i + 1]
+			myList[i + 1] = temp
+		}
+	}
 }
 
 // ! This small change in the outer loop, makes it so we loop through

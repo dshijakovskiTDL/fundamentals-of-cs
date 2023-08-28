@@ -8,21 +8,20 @@ let endIndex = myArray.length - 1
 let elementFound = false
 
 while (startIndex <= endIndex) {
-    let middleIndex = Math.round((startIndex + endIndex) / 2)
-    let element = myArray[middleIndex]
+	let middleIndex = Math.round((startIndex + endIndex) / 2)
+	let element = myArray[middleIndex]
 
-    if (targetElement === element) {
-        elementFound = true
-        break
-    }
+	if (targetElement === element) {
+		elementFound = true
+		break
+	}
 
-    if (targetElement > element) {
-        startIndex = middleIndex + 1
-    }
-    else {
-        endIndex = middleIndex - 1
-    }
+	if (targetElement > element) {
+		startIndex = middleIndex + 1
+	} else {
+		endIndex = middleIndex - 1
+	}
 }
 
-if (elementFound) console.log("We found the element!")
+if (elementFound) console.log('We found the element!')
 else console.log("The element doesn't exist in the array.")

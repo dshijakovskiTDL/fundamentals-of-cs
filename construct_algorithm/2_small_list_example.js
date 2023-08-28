@@ -4,7 +4,7 @@ let smallList = [1, 2, 3]
 // ! that would look like this:
 
 for (let i = 0; i < smallList.length; i++) {
-    console.log(smallList[i]) // Current element
+	console.log(smallList[i]) // Current element
 }
 
 // ! The thing to pay attention to in the loop above is
@@ -23,14 +23,13 @@ for (let i = 0; i < smallList.length; i++) {
 // ! IMPORTANT: This is because after that iteration, `i` will have the value of N
 // ! IMPORTANT: Which means that the condition `N < N` will be false, so the loop ends
 
-
 // ! Okay, but what happens if on every iteration, we want to print
 // ! not just the current element, but the next element as well
 // ! Okay let's try that with the exact same loop as before
 
 for (let i = 0; i < smallList.length; i++) {
-    console.log(smallList[i]) // Current element
-    console.log(smallList[i + 1]) // Next element
+	console.log(smallList[i]) // Current element
+	console.log(smallList[i + 1]) // Next element
 }
 
 // * The above loop will not work.
@@ -64,9 +63,9 @@ for (let i = 0; i < smallList.length; i++) {
 // ? for (let i = 0; i < n-1; i++) -> this goes from 0 to N-2
 
 // ! Now our loop will work fine -> `i` will have the values 0 -> 1
-for (let i = 0; i < n-1; i++) {
-    console.log(smallList[i]) // Current element
-    console.log(smallList[i + 1]) // Next element
+for (let i = 0; i < n - 1; i++) {
+	console.log(smallList[i]) // Current element
+	console.log(smallList[i + 1]) // Next element
 }
 
 // ! Okay, so now we know how to run a loop, when we need to get

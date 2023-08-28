@@ -1,4 +1,4 @@
-name = 'Daniel'
+myName = 'Daniel'
 city = 'Skopje'
 
-print(name[0]) # 'D'
+print(myName[0]) # 'D'

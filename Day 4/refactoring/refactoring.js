@@ -4,11 +4,11 @@
 // * whether or not a number is even
 // ! Our first solution might look something like this:
 function isEven(num) {
-    if (num % 2 === 0) {
-        return true
-    } else {
-        return false
-    }
+	if (num % 2 === 0) {
+		return true
+	} else {
+		return false
+	}
 }
 
 // ! This is correct, but can be made a lot more cleaner and shorter
@@ -17,7 +17,7 @@ function isEven(num) {
 
 // ! So our function can be written like this
 function isEvenRefactored(num) {
-    return (num % 2 === 0)
+	return num % 2 === 0
 }
 
 // ! The expression `num % 2 === 0` will evaluate to TRUE or FALSE, depending on the value of `num`
@@ -34,19 +34,19 @@ function isEvenRefactored(num) {
 
 // ! So, most beginner solutions look like this
 function checkUserAuth(validUsername, validPassword, hasToken) {
-    if (validUsername) {
-        if (validPassword) {
-            if (hasToken) {
-                console.log('Welcome!') // Let user in...
-            } else {
-                throw new Error('Not a valid token')
-            }
-        } else {
-            throw new Error('Password is not valid')
-        }
-    } else {
-        throw new Error('Username is not valid')
-    }
+	if (validUsername) {
+		if (validPassword) {
+			if (hasToken) {
+				console.log('Welcome!') // Let user in...
+			} else {
+				throw new Error('Not a valid token')
+			}
+		} else {
+			throw new Error('Password is not valid')
+		}
+	} else {
+		throw new Error('Username is not valid')
+	}
 }
 
 // ! This approach works but is really confusing to read
@@ -59,10 +59,10 @@ function checkUserAuth(validUsername, validPassword, hasToken) {
 
 // ! So our refactored function wil look like this
 function checkUserAuthRefactored(validUsername, validPassword, hasToken) {
-    if (!validUsername) throw new Error('Username is not valid')
-    if (!validPassword) throw new Error('Password is not valid')
-    if (!hasToken) throw new Error('Not a valid token')
+	if (!validUsername) throw new Error('Username is not valid')
+	if (!validPassword) throw new Error('Password is not valid')
+	if (!hasToken) throw new Error('Not a valid token')
 
-    // ! Here, we know that the username and password are valid and the user has the token
-    console.log('Welcome!') // Let user in...
+	// ! Here, we know that the username and password are valid and the user has the token
+	console.log('Welcome!') // Let user in...
 }
