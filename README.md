@@ -1,5 +1,13 @@
 ## Fundamentals of Computer Science
 
+### Clone the repo
+
+To use the files that are in this repository, you firstly must clone it (download it locally). Run this command:
+
+```zsh
+git clone
+```
+
 ### Running the code
 
 In order to run any of the examples, you can run the following commands:
