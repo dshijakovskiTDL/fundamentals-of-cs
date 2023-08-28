@@ -21,8 +21,6 @@ print(result) # False, since a is True
 # * EQUALITY [===]
 result = a == b
 print(result) # False
-# ! We use the triple equals in JavaScript for a more accurate comparison
-# ! Otherwise, the double equals is used in most languages
 
 # * COMPARISONS [< >]
 result = 4 > 5
