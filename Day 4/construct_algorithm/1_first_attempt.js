@@ -28,7 +28,7 @@ for (let i = 0; i < len; i++) {
 	// because its position in the array,
 	// corresponds with the NEXT value of `i` in the loop
 
-	if (nextElement > currentElement) {
+	if (currentElement > nextElement) {
 		console.log('Wrong order')
 	}
 }
