@@ -20,16 +20,20 @@ let len = myList.length // We don't have to do this, its just for convenience
 for (let i = 0; i < len; i++) {
 	let currentElement = myList[i]
 	// We call it the currentElement (the element at index i)
-	// because it's position in the array,
+	// because its position in the array,
 	// corresponds with the CURRENT value of `i` in the loop
 
 	let nextElement = myList[i + 1]
 	// We call it the next element (the element at index i + 1)
-	// because it's position in the array,
+	// because its position in the array,
 	// corresponds with the NEXT value of `i` in the loop
+
+	if (nextElement > currentElement) {
+		console.log('Wrong order')
+	}
 }
 
 // * If we run the above loop, we will get an error
 // ! Let's look at a simpler example with a smaller array to see why
 
-// ! Go to `2_small_list_example.js` next
+// ? Go to `2_small_list_example.js` next
