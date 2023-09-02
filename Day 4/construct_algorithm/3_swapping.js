@@ -1,25 +1,25 @@
 // * Swapping algorithm
 
-// ! Okay, let's recap what we have learned so far
-// ! about the Bubble Sort algorithm
+// ! Okay, let's recap what we have learned so far about the Bubble Sort algorithm
 
 // * For now, we can write a loop, that can print the
 // * CURRENT and NEXT element of an array
 
-// ! The next step in the bubble sort algorithm is
+// ! The next step in the Bubble Sort algorithm is
 // ! COMPARING the current and next element and
 // ! IF they are in the wrong order -> SWAPPING them
 
-// ! Well, right now we don't know HOW to swap them
-// ! but let's just write out how that WOULD look like if we did know
+// ! Let's pretend that we don't know HOW to swap them (even though we practiced how to do this earlier)
+// ! so let's just write out how that WOULD look like if we did know
 
 // ! First, let's get our initial list back here
 let myList = [4, 2, 6, 2, 8, 0, 1, 5]
+let len = myList.length
 
 //  Remember, we are going from 0 to N - 2,
 //  to get the current and next element in the same iteration
-for (let i = 0; i < myList.length - 1; i++) {
-	//  Let's put the current and next elements in their own variables
+for (let i = 0; i < len - 1; i++) {
+	//  Let's put the current and next elements in their own variables (for now)
 	//  Just to have a bit of a cleaner code and understand what's going on
 	let currentElement = myList[i]
 	let nextElement = myList[i + 1]
@@ -28,7 +28,7 @@ for (let i = 0; i < myList.length - 1; i++) {
 	if (currentElement > nextElement) {
 		// SWAP HERE - we don't know what that looks like yet
 		// but this is how the code would look like
-		console.log('We are swapping them...')
+		console.log('We should swap here...')
 	}
 }
 
@@ -65,7 +65,7 @@ b = temp // THEN `b` gets assigned the value of `temp` (AKA the previous value o
 // ! Now let's use that in our previous loop
 // ! IMPORTANT: We will not use the helper variables currentElement and nextElement now
 // ! IMPORTANT: That is because we need to ALTER THE ARRAY ITSELF
-for (let i = 0; i < myList.length - 1; i++) {
+for (let i = 0; i < len - 1; i++) {
 	if (myList[i] > myList[i + 1]) {
 		// Swap
 		let temp = myList[i]
@@ -80,4 +80,4 @@ for (let i = 0; i < myList.length - 1; i++) {
 console.log(myList) // [2, 4, 2, 6, 0, 1, 5, 8] -> the 8 is at the end of the array
 // ! Now we just need 1 more step to finish our algorithm
 
-// ! Go to '4_bubble_sort.js' next
+// ? Go to '4_bubble_sort.js' next
