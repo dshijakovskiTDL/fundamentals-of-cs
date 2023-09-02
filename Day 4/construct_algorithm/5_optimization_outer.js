@@ -12,11 +12,13 @@
 
 // ! Pikachu, I choose you!
 let myList = [4, 2, 6, 2, 8, 0, 1, 5]
+let len = myList.length
 
 // ! Now let's write out Bubble Sort algorithm again
-// * Bubble sort algorithm - not optimized
-for (let k = 0; k < myList.length; k++) {
-	for (let i = 0; i < myList.length - 1; i++) {
+
+// * Bubble Sort algorithm - not optimized
+for (let k = 0; k < len; k++) {
+	for (let i = 0; i < len - 1; i++) {
 		if (myList[i] > myList[i + 1]) {
 			// Swap
 			let temp = myList[i]
@@ -27,8 +29,10 @@ for (let k = 0; k < myList.length; k++) {
 }
 
 // * 1. Optimizing the outer loop
-// ! Let's run through our algorithm by hand, using a really small array
+// ! To see how we can start optimizing this, let's run through
+// ! our algorithm by hand, using a really small array
 let smallArray = [30, 20, 10]
+
 // ! Remember, in our current algorithm, the outer loop will execute N (3) TIMES
 
 // ! Note: We will go through the outer loop only
@@ -52,8 +56,8 @@ let smallArray = [30, 20, 10]
 
 // ! So our improved algorithm now looks like this
 // * Bubble Sort algorithm - outer loop optimized
-for (let k = 0; k < myList.length - 1; k++) {
-	for (let i = 0; i < myList.length - 1; i++) {
+for (let k = 0; k < len - 1; k++) {
+	for (let i = 0; i < len - 1; i++) {
 		if (myList[i] > myList[i + 1]) {
 			// Swap
 			let temp = myList[i]
@@ -63,11 +67,11 @@ for (let k = 0; k < myList.length - 1; k++) {
 	}
 }
 
-// ! This small change in the outer loop, makes it so we loop through
-// ! every element in the array ONE ITERATION LESS
-// ! Imagine if we had an array of 1 million elements -> this would be a great speed boost then!
+// ! This small change in the outer loop, makes it so that
+// ! we loop through every element in the array ONE ITERATION LESS
+// ! Imagine if we had an array of 1 million elements -> this would then be a great speed boost!
 
 // ! We CAN stop here, but there is one more optimization that we can make
 // ! And its the one what will really speed up our algorithm
 
-// ! Go to '6_optimization_inner.js' next
+// ? Go to '6_optimization_inner.js' next
