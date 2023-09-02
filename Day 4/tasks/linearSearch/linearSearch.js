@@ -18,7 +18,7 @@ function linearSearch(list, element) {
 	// ! Note: It is convention to return -1 to represent an INVALID INDEX
 }
 
-const myList = [6, 1, 15, 7, 21, 80]
+let myList = [6, 1, 15, 7, 21, 80]
 console.log(linearSearch(myList, 7)) // 3
 console.log(linearSearch(myList, 80)) // 5
 console.log(linearSearch(myList, 333)) // -1
