@@ -1,9 +1,11 @@
 // ! Let's say we have an array of just 3 elements
 let smallList = [1, 2, 3]
-// ! If we were to loop through it with a for loop and print the elements
-// ! that would look like this:
+let len = smallList.length
 
-for (let i = 0; i < smallList.length; i++) {
+// ! If we were to loop through it with a for loop and print the elements
+// ! it would look like this:
+
+for (let i = 0; i < len; i++) {
 	console.log(smallList[i]) // Current element
 }
 
@@ -27,7 +29,7 @@ for (let i = 0; i < smallList.length; i++) {
 // ! not just the current element, but the next element as well
 // ! Okay let's try that with the exact same loop as before
 
-for (let i = 0; i < smallList.length; i++) {
+for (let i = 0; i < len; i++) {
 	console.log(smallList[i]) // Current element
 	console.log(smallList[i + 1]) // Next element
 }
@@ -58,18 +60,18 @@ for (let i = 0; i < smallList.length; i++) {
 
 // ! So, we need to change our initial loop
 // ! FROM:
-// ? for (let i = 0; i < n; i++) -> this goes from 0 to N-1
+// ? for (let i = 0; i < N; i++) -> this goes from 0 to N-1
 // ! to:
-// ? for (let i = 0; i < n-1; i++) -> this goes from 0 to N-2
+// ? for (let i = 0; i < N-1; i++) -> this goes from 0 to N-2
 
 // ! Now our loop will work fine -> `i` will have the values 0 -> 1
-for (let i = 0; i < n - 1; i++) {
-	console.log(smallList[i]) // Current element
-	console.log(smallList[i + 1]) // Next element
+for (let i = 0; i < len - 1; i++) {
+	console.log('Current:', smallList[i]) // Current element
+	console.log('Next:', smallList[i + 1]) // Next element
 }
 
-// ! Okay, so now we know how to run a loop, when we need to get
+// ! Okay, so now we know how to run a loop when we need to get
 // ! the CURRENT and NEXT element at the same time
 // * SOLUTION: Run the loop just one iteration less
 
-// ! Go to '3_swapping.js' next
+// ? Go to '3_swapping.js' next
