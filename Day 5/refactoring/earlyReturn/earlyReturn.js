@@ -1,30 +1,4 @@
-// * Refactoring examples
-
-// * 1. Let's say we have a function that needs to return
-// * whether or not a number is even
-// ! Our first solution might look something like this:
-function isEven(num) {
-	if (num % 2 === 0) {
-		return true
-	} else {
-		return false
-	}
-}
-
-// ! This is correct, but can be made a lot more cleaner and shorter
-// * Instead of checking for the boolean result of whether the remainder is 0
-// * we can just return that very result, as that tells us what we need to know
-
-// ! So our function can be written like this
-function isEvenRefactored(num) {
-	return num % 2 === 0
-}
-
-// ! The expression `num % 2 === 0` will evaluate to TRUE or FALSE, depending on the value of `num`
-// ! If it evaluates to TRUE -> the remainder is 0 -> num is divisible by 2 -> num is EVEN
-// ! If it evaluates to false -> the remainder is not 0 -> num is not divisible by 2 -> num is ODD
-
-// * 2. Nested if-statements
+// * Nested if-statements
 // ! Let's say we are making a user authorization system
 // ! and we need to check for the existence of a couple of things
 // ! before letting the user in our app
@@ -50,8 +24,8 @@ function checkUserAuth(validUsername, validPassword, hasToken) {
 }
 
 // ! This approach works but is really confusing to read
-// ! Moreover, is we want to add some more checks, this will get
-// ! even more confusing and nesting if statements just by itself is bad practice
+// ! Moreover, if we want to add some more checks, this will get
+// ! even more confusing. Also, nesting if-statements just by itself is bad practice
 
 // * What we can do is REVERSE THE LOGIC and check for the reverse conditions first
 // * If the reverse conditions are true, we just throw an error and exit out of the function
