@@ -34,14 +34,14 @@ function totalPriceBetter(quantity) {
 
 // ? This looks much better, but we can take it one step further
 // ? If you notice the '(1 - DISCOUNT_PERCENTAGE)' part, it may not be immediately clear
-// ? Why the discount percentage is taken out from the number 1
+// ? Why the discount percentage is subtracted from the number 1
 
 // ? Upon thinking about it for a little bit, we can infer that the reason is because
 // ? the final price returned should actually be 85% of its total value
 // * Ex. If the total price is 100
 // * Ex. -> the final price when the discount is applied should be 85
 // * Ex. -> because 15% has been taken out of it
-// ? So, in our example, rather then TAKING OUT 15% of the total price
+// ? So, in our example, rather then SUBTRACTING 15% of the total price
 // ? we just MULTIPLY the total price by 85% -> Which is 100% - 15%
 
 // ? Instead of having to think about this every time we see this piece of code
