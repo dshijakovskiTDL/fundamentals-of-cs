@@ -15,7 +15,7 @@ function linearSearch(list, element) {
 	return -1
 	// If the for loop completes, it means that we haven't found the element
 	// So we just return -1
-	// ! Note: It is convention to return -1 to represent an INVALID INDEX
+	// ? Note: It is convention to return -1 to represent an INVALID INDEX
 }
 
 let myList = [6, 1, 15, 7, 21, 80]

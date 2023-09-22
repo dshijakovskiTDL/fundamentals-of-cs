@@ -14,9 +14,9 @@ function minItem(list) {
 	// Because we used the FIRST ELEMENT as the assumed MIN, we start looking
 	// for the MIN element from the SECOND ELEMENT in the array
 	for (let i = 1; i < list.length; i++) {
-		// ! If the current item is smaller than the current MIN
+		// ? If the current item is smaller than the current MIN
 		if (list[i] < min) {
-			// ! Then the current item becomes the new MIN
+			// ? Then the current item becomes the new MIN
 			min = list[i]
 		}
 	}
@@ -37,9 +37,9 @@ function maxItem(list) {
 	// Because we used the FIRST ELEMENT as the assumed MAX, we start looking
 	// for the MAX element from the SECOND ELEMENT in the array
 	for (let i = 1; i < list.length; i++) {
-		// ! If the current item is larger than the current MAX
+		// ? If the current item is larger than the current MAX
 		if (list[i] > max) {
-			// ! Then the current item becomes the new MAX
+			// ? Then the current item becomes the new MAX
 			max = list[i]
 		}
 	}
