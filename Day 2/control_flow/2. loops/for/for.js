@@ -6,7 +6,7 @@
 // ! }
 
 // ! INITIALIZATION - we can do anything to initialize the loop
-// ! Usually this means initializing a variable to iterate with, to some starting value
+// ! Usually this means initializing a variable to some starting value
 
 // ! CONDITION - this is the condition that if TRUE, continues executing the code
 
@@ -15,7 +15,7 @@
 // ! some kind of a change to our conditions (ex. increment the i variable so that the condition check is different next time)
 
 for (let i = 0; i < 10; i++) {
-	console.log(i, 'Hey there!')
+  console.log(i, "Hey there!");
 }
 
 // for -> keyword for starting a for loop
@@ -25,11 +25,11 @@ for (let i = 0; i < 10; i++) {
 // 4. i++, this is the piece of code that runs if the condition above is met. It runs BEFORE THE NEXT ITERATION
 
 // * The order in which these steps occur is as follows:
-// * INITIALIZATION - i = 0
-// *  -> CONDITION - 0 < 10
-// *      -> CODE_EXECUTION (first iteration) - "0 Hey there!" is printed
-// *          -> CHANGE - i++
-// *              -> CONDITION - 1 < 10
-// *                  -> CODE_EXECUTION (second iteration) - "1 Hey there!" is printed
-// *                     -> CHANGE - i++
+// * INITIALIZATION: i = 0
+// *  -> CONDITION: 0 < 10 -> TRUE
+// *      -> CODE_EXECUTION (first iteration): "0 Hey there!" is printed
+// *          -> CHANGE: i++
+// *              -> CONDITION: 1 < 10 -> TRUE
+// *                  -> CODE_EXECUTION (second iteration): - "1 Hey there!" is printed
+// *                     -> CHANGE: i++
 // *                         -> etc. until the CONDITION is FALSE

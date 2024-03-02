@@ -9,19 +9,19 @@
 
 // ! So, most beginner solutions look like this
 function checkUserAuth(validUsername, validPassword, hasToken) {
-	if (validUsername) {
-		if (validPassword) {
-			if (hasToken) {
-				console.log('Welcome!') // Let user in...
-			} else {
-				throw new Error('Not a valid token')
-			}
-		} else {
-			throw new Error('Password is not valid')
-		}
-	} else {
-		throw new Error('Username is not valid')
-	}
+  if (validUsername) {
+    if (validPassword) {
+      if (hasToken) {
+        console.log("Welcome!"); // Let user in...
+      } else {
+        throw new Error("Not a valid token");
+      }
+    } else {
+      throw new Error("Password is not valid");
+    }
+  } else {
+    throw new Error("Username is not valid");
+  }
 }
 
 // ? This approach works but is really confusing to read
@@ -34,10 +34,10 @@ function checkUserAuth(validUsername, validPassword, hasToken) {
 
 // ! So our refactored function wil look like this
 function checkUserAuthRefactored(validUsername, validPassword, hasToken) {
-	if (!validUsername) throw new Error('Username is not valid')
-	if (!validPassword) throw new Error('Password is not valid')
-	if (!hasToken) throw new Error('Not a valid token')
+  if (!validUsername) throw new Error("Username is not valid");
+  if (!validPassword) throw new Error("Password is not valid");
+  if (!hasToken) throw new Error("Not a valid token");
 
-	// ! Here, we know that the username and password are valid and the user has the token
-	console.log('Welcome!') // Let user in...
+  // ! Here, we know that the username and password are valid and the user has the token
+  console.log("Welcome!"); // Let user in...
 }

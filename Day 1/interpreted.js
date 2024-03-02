@@ -1,5 +1,5 @@
-console.log('Hello world!')
+console.log("Hello world!");
 
-let x = 10
+let x = 10;
 
-console.log(x * x)
+console.log(x * x);

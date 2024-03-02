@@ -1,12 +1,12 @@
 // ? Let's say we have an array of just 3 elements
-let smallList = [1, 2, 3]
-let len = smallList.length
+let smallList = [1, 2, 3];
+let len = smallList.length;
 
 // ? If we were to loop through it with a for loop and print the elements
 // ? it would look like this:
 
 for (let i = 0; i < len; i++) {
-	console.log(smallList[i]) // Current element
+  console.log(smallList[i]); // Current element
 }
 
 // ? The thing to pay attention to in the loop above is
@@ -30,8 +30,8 @@ for (let i = 0; i < len; i++) {
 // ? Okay let's try that with the exact same loop as before
 
 for (let i = 0; i < len; i++) {
-	console.log(smallList[i]) // Current element
-	console.log(smallList[i + 1]) // Next element
+  console.log(smallList[i]); // Current element
+  console.log(smallList[i + 1]); // Next element
 }
 
 // * The above loop will not work.
@@ -66,8 +66,8 @@ for (let i = 0; i < len; i++) {
 
 // ? Now our loop will work fine -> `i` will have the values 0 -> 1
 for (let i = 0; i < len - 1; i++) {
-	console.log('Current:', smallList[i]) // Current element
-	console.log('Next:', smallList[i + 1]) // Next element
+  console.log("Current:", smallList[i]); // Current element
+  console.log("Next:", smallList[i + 1]); // Next element
 }
 
 // ? Okay, so now we know how to run a loop when we need to get

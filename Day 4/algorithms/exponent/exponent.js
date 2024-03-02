@@ -6,21 +6,21 @@
 // ? 2 to the power of 3 is just 2 * 2 * 2 (2 multiplied by itself 3 times)
 
 function exponent(x, y) {
-	// Since we will be doing multiplication, the product needs to start with 1
-	// ? If we were doing a sum calculation, this variable would be 0
-	let product = 1
+  // Since we will be doing multiplication, the product needs to start with 1
+  // ? If we were doing a sum calculation, this variable would be 0
+  let product = 1;
 
-	// Perform the multiplication Y times
-	for (let i = 0; i < y; i++) {
-		product = product * x
-	}
+  // Perform the multiplication Y times
+  for (let i = 0; i < y; i++) {
+    product = product * x;
+  }
 
-	return product
+  return product;
 }
 
-console.log(exponent(2, 2)) // 4
-console.log(exponent(2, 3)) // 8
-console.log(exponent(10, 0)) // 1
-console.log(exponent(10, 5)) // 100000
+console.log(exponent(2, 2)); // 4
+console.log(exponent(2, 3)); // 8
+console.log(exponent(10, 0)); // 1
+console.log(exponent(10, 5)); // 100000
 
 // ? Can this be improved somehow? Possibly shortened?

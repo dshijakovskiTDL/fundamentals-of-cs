@@ -5,14 +5,14 @@
 // ? is with the MODULO operator '%'
 
 function isEven(num) {
-	if (num % 2 === 0) {
-		return true
-	} else {
-		return false
-	}
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log(isEven(2)) // true
-console.log(isEven(3)) // false
+console.log(isEven(2)); // true
+console.log(isEven(3)); // false
 
 // ? Can this be improved somehow? Possibly shortened?

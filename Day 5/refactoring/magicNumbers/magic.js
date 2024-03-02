@@ -9,8 +9,8 @@
 
 // ! So, our first approach may look something like this
 function totalPriceBad(quantity) {
-	let price = quantity * 20 // Total price of all the items
-	return price * (1 - 0.15) // Final price with the discount deducted (85% of the total price)
+  let price = quantity * 20; // Total price of all the items
+  return price * (1 - 0.15); // Final price with the discount deducted (85% of the total price)
 }
 
 // ? The above example doesn't look bad at first, its clean and short
@@ -23,13 +23,13 @@ function totalPriceBad(quantity) {
 // * We don't know where they came from or what they mean, they just make our code work
 
 // ? To fix this, we can EXTRACT THOSE NUMBERS INTO SEPARATE CONSTANT VARIABLES like this
-const PRICE_PER_ITEM = 20
-const DISCOUNT_PERCENTAGE = 0.15
+const PRICE_PER_ITEM = 20;
+const DISCOUNT_PERCENTAGE = 0.15;
 
 // ? Now, when we look at our function, we can clearly see what is being calculated
 function totalPriceBetter(quantity) {
-	let price = quantity * PRICE_PER_ITEM
-	return price * (1 - DISCOUNT_PERCENTAGE)
+  let price = quantity * PRICE_PER_ITEM;
+  return price * (1 - DISCOUNT_PERCENTAGE);
 }
 
 // ? This looks much better, but we can take it one step further
@@ -47,10 +47,10 @@ function totalPriceBetter(quantity) {
 // ? Instead of having to think about this every time we see this piece of code
 // ? we can make it easier on ourselves by having ANOTHER CONSTANT VARIABLE
 // ? containing the DISCOUNT FACTOR with which to multiple the total price by
-const DISCOUNT_FACTOR = 1 - DISCOUNT_PERCENTAGE
+const DISCOUNT_FACTOR = 1 - DISCOUNT_PERCENTAGE;
 
 // ? Now finally, our function looks much cleaner and easier to understand
 function totalPrice(quantity) {
-	let price = quantity * PRICE_PER_ITEM
-	return price * DISCOUNT_FACTOR
+  let price = quantity * PRICE_PER_ITEM;
+  return price * DISCOUNT_FACTOR;
 }

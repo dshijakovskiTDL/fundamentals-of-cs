@@ -2,14 +2,14 @@
 
 // ? Our original implementation
 function isEvenOriginal(num) {
-	if (num % 2 === 0) {
-		return true
-	} else {
-		return false
-	}
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // ? Refactored
 function isEven(num) {
-	return num % 2 === 0
+  return num % 2 === 0;
 }

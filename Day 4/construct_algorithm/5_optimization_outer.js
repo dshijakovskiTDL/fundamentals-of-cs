@@ -11,27 +11,27 @@
 // ? So let's try to optimize this thing! 💪
 
 // ? Pikachu, I choose you!
-let myList = [4, 2, 6, 2, 8, 0, 1, 5]
-let len = myList.length
+let myList = [4, 2, 6, 2, 8, 0, 1, 5];
+let len = myList.length;
 
 // ? Now let's write out Bubble Sort algorithm again
 
 // * Bubble Sort algorithm - not optimized
 for (let k = 0; k < len; k++) {
-	for (let i = 0; i < len - 1; i++) {
-		if (myList[i] > myList[i + 1]) {
-			// Swap
-			let temp = myList[i]
-			myList[i] = myList[i + 1]
-			myList[i + 1] = temp
-		}
-	}
+  for (let i = 0; i < len - 1; i++) {
+    if (myList[i] > myList[i + 1]) {
+      // Swap
+      let temp = myList[i];
+      myList[i] = myList[i + 1];
+      myList[i + 1] = temp;
+    }
+  }
 }
 
 // * 1. Optimizing the outer loop
 // ? To see how we can start optimizing this, let's run through
 // ? our algorithm by hand, using a really small array
-let smallArray = [30, 20, 10]
+let smallArray = [30, 20, 10];
 
 // ? Remember, in our current algorithm, the outer loop will execute N (3) TIMES
 
@@ -57,14 +57,14 @@ let smallArray = [30, 20, 10]
 // ? So our improved algorithm now looks like this
 // * Bubble Sort algorithm - outer loop optimized
 for (let k = 0; k < len - 1; k++) {
-	for (let i = 0; i < len - 1; i++) {
-		if (myList[i] > myList[i + 1]) {
-			// Swap
-			let temp = myList[i]
-			myList[i] = myList[i + 1]
-			myList[i + 1] = temp
-		}
-	}
+  for (let i = 0; i < len - 1; i++) {
+    if (myList[i] > myList[i + 1]) {
+      // Swap
+      let temp = myList[i];
+      myList[i] = myList[i + 1];
+      myList[i + 1] = temp;
+    }
+  }
 }
 
 // ? This small change in the outer loop, makes it so that

@@ -4,11 +4,11 @@
 
 // ! Our first solution might look something like this:
 function isLargeNum(num) {
-	if (num > 100) {
-		return true
-	} else {
-		return false
-	}
+  if (num > 100) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // ? This is correct, but can be made a lot more cleaner and shorter
@@ -17,7 +17,7 @@ function isLargeNum(num) {
 
 // ! So our function can be written like this
 function isLargeNumRefactored(num) {
-	return num > 100
+  return num > 100;
 }
 
 // ? The expression `num > 100` will evaluate to TRUE or FALSE, depending on the value of `num`
