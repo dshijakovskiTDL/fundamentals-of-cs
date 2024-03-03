@@ -29,11 +29,11 @@ while (i < 10) {
 // ! (ex. when animating a game)
 
 // * The order in which these steps occur is pretty self explanatory:
-// * INITIALIZATION (optional)
-// *  -> CONDITION
-// *     -> CODE_EXECUTION (first iteration)
-// *         -> CHANGE (optional)
-// *             -> CONDITION
-// *                 -> CODE_EXECUTION (second iteration)
-// *                     -> CHANGE (optional)
-// *                         -> etc. indefinitely OR until the CONDITION is false
+// * INITIALIZATION (optional): i = 0
+// *  -> CONDITION: 0 < 10 -> TRUE
+// *     -> CODE_EXECUTION (first iteration): "0 Hey there!" is printed
+// *         -> CHANGE (optional): i++
+// *             -> CONDITION: 1 < 10 -> TRUE
+// *                 -> CODE_EXECUTION (second iteration): "1 Hey there!" is printed
+// *                     -> CHANGE (optional): i++
+// *                         -> etc. until the CONDITION is false
