@@ -5,3 +5,9 @@ int main(int argc, char const *argv[]) {
     
     return 0;
 }
+
+// After installing GCC, run
+// gcc compiled.c -o app
+// ./app
+
+// to execute the code
