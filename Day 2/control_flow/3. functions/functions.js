@@ -2,14 +2,14 @@
 
 // * Functions without inputs
 
-// ! Defining a function in JavaScript starts with the keyword `function`
-// ! Then we write the name of the function, followed by parentheses
-// ! We can optionally add `input parameters` inside the parentheses
+// ? Defining a function in JavaScript starts with the keyword `function`
+// ? Then we write the name of the function, followed by parentheses
+// ? We can optionally add `input parameters` inside the parentheses
 function my_function() {
   console.log("Hey there! I am a function that prints this cool message!");
 }
 
-// ! To call `my_function`, we just write out its name followed by parentheses
+// To call `my_function`, we just write out its name followed by parentheses
 my_function();
 
 // * Functions with inputs
@@ -18,9 +18,9 @@ my_function();
 // and then do something with it.
 // That is how we write flexible and reusable functions - we make the function do something depending on the input
 
-// ! To add input parameters in a function definition in JavaScript
-// ! we just add them inside the parentheses, naming each parameter
-// ! and separating multiple parameters with a comma
+// ? To add input parameters in a function definition in JavaScript
+// ? we just add them inside the parentheses, naming each parameter
+// ? and separating multiple parameters with a comma
 
 function greet_person(name) {
   console.log(`Hello ${name}, nice to meet you!`);

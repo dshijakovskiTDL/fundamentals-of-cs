@@ -1,18 +1,18 @@
 // * For loop
 
 // General shape of a for loop:
-// ! for (INITIALIZATION; CONDITION; CHANGE) {
-// !    ONE_ITERATION_OF_CODE_EXECUTION
-// ! }
+// ? for (INITIALIZATION; CONDITION; CHANGE) {
+// ?    ONE_ITERATION_OF_CODE_EXECUTION
+// ? }
 
-// ! INITIALIZATION - we can do anything to initialize the loop
-// ! Usually this means initializing a variable to some starting value
+// ? INITIALIZATION - we can do anything to initialize the loop
+// ? Usually this means initializing a variable to some starting value
 
-// ! CONDITION - this is the condition that if TRUE, continues executing the code
+// ? CONDITION - this is the condition that if TRUE, continues executing the code
 
-// ! CHANGE - this is the step run AFTER the condition is checked and (if the condition is TRUE)
-// ! BEFORE the next iteration of the code. We can use this part of the loop to make
-// ! some kind of a change to our conditions (ex. increment the i variable so that the condition check is different next time)
+// ? CHANGE - this is the step run AFTER the condition is checked and (if the condition is TRUE)
+// ? BEFORE the next iteration of the code. We can use this part of the loop to make
+// ? some kind of a change to our conditions (ex. increment the i variable so that the condition check is different next time)
 
 for (let i = 0; i < 10; i++) {
   console.log(i, "Hey there!");

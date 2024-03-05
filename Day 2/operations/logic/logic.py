@@ -8,29 +8,29 @@ result = False
 
 # * AND [&&]
 result = a and b
-print(result) # False
+print(result)  # False
 
 # * OR [||]
 result = a or b
-print(result) # True
+print(result)  # True
 
 # * NOT [!]
 result = not a
-print(result) # False, since a is True
+print(result)  # False, since a is True
 
 # * EQUALITY [===]
 result = a == b
-print(result) # False
+print(result)  # False
 
 # * COMPARISONS [< >]
 result = 4 > 5
-print(result) # False
+print(result)  # False
 
 result = 10 < 100
-print(result) # True
+print(result)  # True
 
-# ! We can combine the NOT and EQUALITY operators to create more complex logical operations
+# We can combine the NOT and EQUALITY operators to create more complex logical operations
 
-result = 10 <= 10 # True
-result = 10 != 50 # True
-result = 100 >= 11 # False
+result = 10 <= 10  # True
+result = 10 != 50  # True
+result = 100 >= 11  # False

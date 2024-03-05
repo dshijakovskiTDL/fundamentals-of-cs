@@ -3,9 +3,9 @@
 
 // * 1. Using the if statement
 
-// ! TIP: To check if a number is even, we just use the "modulo" operator
-// ! This operator gives us the remainder of the division operation
-// ! Therefore, if the result of a modulo operation X % Y is 0, that means that "X is divisible by Y"
+// ? TIP: To check if a number is even, we just use the "modulo" operator
+// ? This operator gives us the remainder of the division operation
+// ? Therefore, if the result of a modulo operation X % Y is 0, that means that "X is divisible by Y"
 
 for (let i = 0; i < 10; i++) {
   if (i % 2 === 0) {
@@ -23,7 +23,7 @@ for (let i = 0; i < 10; i++) {
 // * 2. Using the continue keyword
 
 for (let i = 0; i < 10; i++) {
-  // ! If the remainder is NOT 0, then `element` is NOT divisible by 2 (it's not an even number)
+  // If the remainder is NOT 0, then `element` is NOT divisible by 2 (it's not an even number)
   if (i % 2 !== 0) {
     continue;
   }

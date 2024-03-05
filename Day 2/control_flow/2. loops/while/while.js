@@ -12,21 +12,21 @@ while (i < 10) {
 //  2.a i++ - optional part of a while loop - some change that will eventually end the loop
 
 // General shape of a while loop:
-// ! INITIALIZATION (optional)
+// ? INITIALIZATION (optional)
 
-// ! while(CONDITION) {
-// !    ONE_ITERATION_OF_CODE_EXECUTION
-// !    CHANGE (optional)
-// ! }
+// ? while(CONDITION) {
+// ?    ONE_ITERATION_OF_CODE_EXECUTION
+// ?    CHANGE (optional)
+// ? }
 
-// ! INITIALIZATION - the initialization happens OUTSIDE the while loop and it is optional
-// ! We don't necessarily need to do any initialization steps (ex. infinite loop)
+// ? INITIALIZATION - the initialization happens OUTSIDE the while loop and it is optional
+// ? We don't necessarily need to do any initialization steps (ex. infinite loop)
 
-// ! CONDITION - this is the condition that if TRUE, continues executing the code
+// ? CONDITION - this is the condition that if TRUE, continues executing the code
 
-// ! CHANGE - this is an optional part that happens SOMEWHERE inside the code block of the while loop
-// ! It is optional because we don't always want our loop to end, we may need it to continue executing infinitely
-// ! (ex. when animating a game)
+// ? CHANGE - this is an optional part that happens SOMEWHERE inside the code block of the while loop
+// ? It is optional because we don't always want our loop to end, we may need it to continue executing infinitely
+// ? (ex. when animating a game)
 
 // * The order in which these steps occur is pretty self explanatory:
 // * INITIALIZATION (optional): i = 0

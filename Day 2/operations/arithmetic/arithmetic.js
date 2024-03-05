@@ -24,7 +24,7 @@ console.log({ result }); // 2
 // * Modulo [%]
 result = a % b;
 console.log({ result }); // 0
-// ! We divide a (20) to b (10), which gives us the result of 2, but the REMAINDER of that operation is 0
+// We divide a (20) to b (10), which gives us the result of 2, but the REMAINDER of that operation is 0
 
 // * Shorthands
 // Sometimes we need to increment a variable by some value, we can do this a couple of ways
@@ -70,4 +70,4 @@ let newY = 10;
 newY--;
 console.log({ newY }); // 9
 
-// ! We can only do this shorthand if we want do increment/decrement the value of a variable by ONE (1)
+// We can only do this shorthand if we want do increment/decrement the value of a variable by ONE (1)

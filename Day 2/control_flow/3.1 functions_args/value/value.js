@@ -9,4 +9,4 @@ x = 10;
 doSomething(x);
 console.log("x outside the function:", x);
 
-// ! It doesn't matter if they are the same name or not
+// ? It doesn't matter if they are the same name or not

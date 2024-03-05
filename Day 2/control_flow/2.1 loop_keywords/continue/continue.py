@@ -3,9 +3,9 @@
 
 # * 1. Using the if statement
 
-# ! TIP: To check if a number is even, we just use the "modulo" operator
-# ! This operator gives us the remainder of the division operation
-# ! Therefore, if the result of a modulo operation X % Y is 0, that means that "X is divisible by Y"
+# ? TIP: To check if a number is even, we just use the "modulo" operator
+# ? This operator gives us the remainder of the division operation
+# ? Therefore, if the result of a modulo operation X % Y is 0, that means that "X is divisible by Y"
 
 for element in range(0, 10):
     if element % 2 == 0:
@@ -21,7 +21,8 @@ for element in range(0, 10):
 # * 2. Using the continue keyword
 
 for element in range(0, 10):
-    if element % 2 != 0:  # ! If the remainder is NOT 0, then `element` is NOT divisible by 2 (it's not an even number)
+    # If the remainder is NOT 0, then `element` is NOT divisible by 2 (it's not an even number)
+    if element % 2 != 0:
         continue
 
     print("Found an even number", element)
