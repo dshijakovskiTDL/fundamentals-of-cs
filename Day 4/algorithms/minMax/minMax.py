@@ -9,16 +9,16 @@
 # Here, we will do the first option
 # Feel free to implement the second option by yourself
 def minItem(list):
-	min = list[0]
+    min = list[0]
 
-	# Because we used the FIRST ELEMENT as the assumed MIN, we start looking
-	# for the MIN element from the SECOND ELEMENT in the array
-	for i in range(1, len(list)):
-		# ! If the current item is smaller than the current MIN
-		if (list[i] < min):
-			min = list[i] # ! Then the current item becomes the new MIN
+    # Because we used the FIRST ELEMENT as the assumed MIN, we start looking
+    # for the MIN element from the SECOND ELEMENT in the array
+    for i in range(1, len(list)):
+        # ! If the current item is smaller than the current MIN
+        if (list[i] < min):
+            min = list[i]  # ! Then the current item becomes the new MIN
 
-	return min
+    return min
 
 
 # Before starting the search, we must firstly ASSUME an initial largest element (MAX)
@@ -29,19 +29,19 @@ def minItem(list):
 # Here, we will do the first option
 # Feel free to implement the second option by yourself
 def maxItem(list):
-	max = list[0]
+    max = list[0]
 
-	# Because we used the FIRST ELEMENT as the assumed MAX, we start looking
-	# for the MAX element from the SECOND ELEMENT in the array
-	for i in range(1, len(list)):
-		# ! If the current item is larger than the current MAX
-		if list[i] > max:
-			max = list[i] # ! Then the current item becomes the new MAX
+    # Because we used the FIRST ELEMENT as the assumed MAX, we start looking
+    # for the MAX element from the SECOND ELEMENT in the array
+    for i in range(1, len(list)):
+        # ! If the current item is larger than the current MAX
+        if list[i] > max:
+            max = list[i]  # ! Then the current item becomes the new MAX
 
-	return max
+    return max
 
 
 myList = [5, -2, 13, 99, 42, 6]
 
-print(minItem(myList)) # -2
-print(maxItem(myList)) # 99
+print(minItem(myList))  # -2
+print(maxItem(myList))  # 99

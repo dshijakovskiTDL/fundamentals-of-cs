@@ -11,16 +11,16 @@ while start_index <= end_index:
     # We CAST the middle_index to an integer, to avoid decimal (float) numbers
     middle_index = int((start_index + end_index) / 2)
     element = my_array[middle_index]
-    
+
     if target_element == element:
         element_found = True
         break
-    
+
     if target_element > element:
         start_index = middle_index + 1
     else:
         end_index = middle_index - 1
-        
+
 
 if element_found:
     print("We found the element!")

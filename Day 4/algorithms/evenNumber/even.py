@@ -5,12 +5,13 @@
 # ? is with the MODULO operator '%'
 
 def isEven(num):
-	if num % 2 == 0:
-		return True
-	else:
-		return False
+    if num % 2 == 0:
+        return True
+    else:
+        return False
 
-print(isEven(2)) # True
-print(isEven(3)) # False
+
+print(isEven(2))  # True
+print(isEven(3))  # False
 
 # ? Can this be improved somehow? Possibly shortened?

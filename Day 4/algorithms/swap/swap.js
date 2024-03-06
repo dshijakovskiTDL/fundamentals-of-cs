@@ -21,7 +21,6 @@ function swap(list, indexA, indexB) {
   // The convention is to call this variable 'temp'
 
   let temp = list[indexA];
-
   list[indexA] = list[indexB]; // We put the element at 'Index B' at 'Index A'
   list[indexB] = temp; // We put the value of temp (which is THE ELEMENT THAT WAS AT 'Index A') at 'Index B'
 
