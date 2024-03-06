@@ -1,8 +1,8 @@
 // * Optimizing the Bubble Sort algorithm
 
 // ? The reason why we want to optimize any algorithm
-// ? is because we will NEVER know the size of the array in real life
-// ? It can have 10 elements or 10 thousand elements, or even 10 million elements
+// ? is because we WON'T ALWAYS KNOW the size of the array in real life
+// ? It can have 10 elements or 10,000 elements, or even 10,000,000 elements
 // ? depending on what we are doing
 
 // ? And if our algorithms aren't optimized, they can perform
@@ -35,8 +35,8 @@ let smallArray = [30, 20, 10];
 
 // ? Remember, in our current algorithm, the outer loop will execute N (3) TIMES
 
-// ? Note: We will go through the outer loop only
-// ? Note: We will label the sorted elements with a parentheses ()
+// ? Note: We will only focus on the outer loop
+// ? Note: We will label the sorted elements with a pair of parentheses ()
 
 // * Outer loop FIRST iteration finishes -> the LARGEST item (30) is sorted
 // * -> smallArray is now [20, 10, (30)]

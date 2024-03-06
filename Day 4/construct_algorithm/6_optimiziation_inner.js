@@ -28,15 +28,15 @@ let smallArray = [30, 20, 10];
 // ? Note: We will label the ELEMENTS BEING COMPARED with a parentheses ()
 
 // * Outer loop 1st iteration
-// *    Inner loop 1st iteration finishes     - [(30), (20), 10] -> [(20), (30), 10]
+// *    Inner loop 1st iteration     - [(30), (20), 10] -> [(20), (30), 10]
 //*     smallArray is now [20, 30, 10]
-// *    Inner loop 2nd iteration finishes    - [20, (30), (10)] -> [20, (10), (30)]
+// *    Inner loop 2nd iteration    - [20, (30), (10)] -> [20, (10), (30)]
 // *    smallArray is now [20, 10, 30]
 
 // * Outer loop 2nd iteration
-// *    Inner loop 1st iteration finishes     - [(20), (10), 30] -> [(10), (20), 30]
+// *    Inner loop 1st iteration     - [(20), (10), 30] -> [(10), (20), 30]
 // *    smallArray is now [10, 20, 30] (sorted!!!)
-// *    Inner loop 2nd iteration finishes    - [10, (20), (30)] -> [10, (20), (30)]
+// *    Inner loop 2nd iteration    - [10, (20), (30)] -> [10, (20), (30)]
 // *    smallArray is now [10, 20, 30]
 
 // ? Notice how, long before the algorithm ended execution, our array already got sorted
@@ -61,7 +61,7 @@ let smallArray = [30, 20, 10];
 // * This means the the INNER LOOP now needs to check 1 LESS ELEMENT
 // ? Let's continue this logic
 
-// * We know that DURING the 3nd ITERATION OF THE OUTER LOOP -> 2 element has already been sorted
+// * We know that DURING the 3nd ITERATION OF THE OUTER LOOP -> 2 elements have already been sorted
 // * This means the the INNER LOOP now needs to check 2 LESS ELEMENTS
 
 // ? This brings us to the last improvement of the algorithm
@@ -70,21 +70,21 @@ let smallArray = [30, 20, 10];
 
 // ? Here's the logic behind it
 // * Outer loop 1st iteration STARTS -> k = 0 (0 elements have been sorted)
-// * -> Inner loop needs to check 0 less elements
+// * -> Inner loop needs to check 0 less elements -> N
 
 // * Outer loop 2nd iteration STARTS -> k = 1 (1 element has been sorted)
-// * -> Inner loop needs to check 1 less element
+// * -> Inner loop needs to check 1 less element -> N-1
 
 // * Outer loop 3rd iteration STARTS -> k = 2 (2 element has been sorted)
-// * -> Inner loop needs to check 2 less element
+// * -> Inner loop needs to check 2 less elements -> N-2
 
 // ? So what we need to do is just
 // * REDUCE THE NUMBER OF TIMES THE INNER LOOP RUNS BY `k`
 
 // ? That means that instead of our inner loop being
-// ? for (let i = 0; i < len - 1; i++) {}
+for (let i = 0; i < len - 1; i++) {}
 // ? We need to change it to
-// ? for (let i = 0; i < len - 1 - k; i++) {}
+for (let i = 0; i < len - 1 - k; i++) {}
 
 // ? And finally, our optimized algorithm now looks like this:
 // * Bubble Sort algorithm - optimized
