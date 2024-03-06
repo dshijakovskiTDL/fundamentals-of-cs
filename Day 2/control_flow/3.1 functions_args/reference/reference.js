@@ -15,5 +15,5 @@ doSomething(arr);
 console.log("arr outside the function", arr);
 
 // ? Notice how we are changing the CONTENTS of the array
-// ? but we are NOT REASSIGNING it to a new value ex. `arr = [1, 2, 3]`.
+// ? but we are NOT REASSIGNING it to a new value - meaning, we are not doing something like `arr = [1, 2, 3]`.
 // ? That is because when we do that, the `arr` inside the function acts as an argument "passed by value"
