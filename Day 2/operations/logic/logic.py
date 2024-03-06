@@ -33,4 +33,4 @@ print(result)  # True
 
 result = 10 <= 10  # True
 result = 10 != 50  # True
-result = 100 >= 11  # False
+result = 100 >= 11  # True

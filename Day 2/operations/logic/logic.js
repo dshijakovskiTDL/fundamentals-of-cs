@@ -33,4 +33,4 @@ console.log({ result }); // true
 
 result = 10 <= 10; // true
 result = 10 != 50; // true
-result = 100 >= 11; // false
+result = 100 >= 11; // true
