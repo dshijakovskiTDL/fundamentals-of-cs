@@ -30,7 +30,7 @@ let smallArray = [30, 20, 10];
 // * Outer loop 1st iteration
 // *    Inner loop 1st iteration     - [(30), (20), 10] -> [(20), (30), 10]
 //*     smallArray is now [20, 30, 10]
-// *    Inner loop 2nd iteration    - [20, (30), (10)] -> [20, (10), (30)]
+// *    Inner loop 2nd iteration   - [20, (30), (10)] -> [20, (10), (30)]
 // *    smallArray is now [20, 10, 30]
 
 // * Outer loop 2nd iteration
@@ -61,7 +61,7 @@ let smallArray = [30, 20, 10];
 // * This means the the INNER LOOP now needs to check 1 LESS ELEMENT
 // ? Let's continue this logic
 
-// * We know that DURING the 3nd ITERATION OF THE OUTER LOOP -> 2 elements have already been sorted
+// * We know that DURING the 3rd ITERATION OF THE OUTER LOOP -> 2 elements have already been sorted
 // * This means the the INNER LOOP now needs to check 2 LESS ELEMENTS
 
 // ? This brings us to the last improvement of the algorithm

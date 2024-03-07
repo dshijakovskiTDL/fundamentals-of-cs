@@ -31,7 +31,7 @@ for (let k = 0; k < len; k++) {
 // * 1. Optimizing the outer loop
 // ? To see how we can start optimizing this, let's run through
 // ? our algorithm by hand, using a really small array
-let smallArray = [30, 20, 10];
+let smallArray = [30, 20, 10]; // [10, 20, 30]
 
 // ? Remember, in our current algorithm, the outer loop will execute N (3) TIMES
 

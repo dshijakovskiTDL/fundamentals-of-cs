@@ -9,7 +9,7 @@
 // ? COMPARING the current and next element and
 // ? IF they are in the wrong order -> SWAPPING them
 
-// ? Let's pretend that we don't know HOW to swap them
+// ? Let's pretend that we know HOW to swap them
 // ? so let's just write out how that WOULD look like if we DID know
 
 // ? First, let's get our initial list back here
@@ -28,7 +28,7 @@ for (let i = 0; i < len - 1; i++) {
   if (currentElement > nextElement) {
     // SWAP HERE - we don't know what that looks like yet
     // but this is how the code AROUND IT would look like
-    console.log("We should swap here...");
+    // console.log("We should swap here...");
   }
 }
 

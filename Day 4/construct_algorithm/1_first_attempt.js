@@ -25,7 +25,7 @@ let len = myList.length; // We don't have to do this, its just for convenience
 // ? Well, we know that we need to loop through the list and do something with it
 // ? Okay then, let's just write that and start from there
 
-// ? for (let i = 0; i < len; i++)
+for (let i = 0; i < len; i++) {}
 
 // ? So, using this loop, let's try and get the current element and the next element
 // ? and compare the two. If they are in the wrong order, let's just print out "Wrong order"
