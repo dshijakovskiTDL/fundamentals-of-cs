@@ -2,16 +2,14 @@
 
 # ? Our original implementation
 def exponentOriginal(x, y):
-	product = 1
+    product = 1
 
-	for i in range(0, y):
-		product = product * x
+    for i in range(0, y):
+        product = product * x
 
-	return product
+    return product
 
 
 # ? Refactored
 def exponent(x, y):
-    # ? '**' is the arithmetic operator for 'power of'
-	return x ** y
-
+    return x ** y  # ? '**' is the arithmetic operator for 'power of'

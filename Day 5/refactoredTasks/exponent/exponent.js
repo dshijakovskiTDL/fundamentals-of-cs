@@ -13,6 +13,5 @@ function exponentOriginal(x, y) {
 
 // ? Refactored
 function exponent(x, y) {
-  // ? '**' is the arithmetic operator for 'power of'
-  return x ** y;
+  return x ** y; // ? '**' is the arithmetic operator for 'power of'
 }
