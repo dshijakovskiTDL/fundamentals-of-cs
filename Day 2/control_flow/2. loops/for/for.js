@@ -20,9 +20,9 @@ for (let i = 0; i < 10; i++) {
 
 // for -> keyword for starting a for loop
 //  1. let i = 0 -> initialization step, this piece of code runs before the code inside the loop
-//  2. The code inside the block runs, we call each execution of the code - one iteration
-//  3. i < 10 -> the condition, this piece of code checks whether or not to continue executing the code
-// 4. i++, this is the piece of code that runs if the condition above is met. It runs BEFORE THE NEXT ITERATION
+//  2. i < 10 -> the condition, this piece of code checks whether or not to continue executing the code
+//  3. The code inside the block runs, we call each execution of the code - one iteration
+//  4. i++, this is the piece of code that runs if the condition above is met. It runs BEFORE THE NEXT ITERATION
 
 // * The order in which these steps occur is as follows:
 // * INITIALIZATION: i = 0
