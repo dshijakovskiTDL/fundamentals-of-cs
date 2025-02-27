@@ -17,8 +17,10 @@ decimal = 10.5  # 024 (hex)
 
 # ----------------------------------------------------------------------------------------------
 
+# Characters
+
 first_letter = 'A'  # 012 (hex)
-number_character = '2'  # 016 (hex)
+magic_number = '2'  # 016 (hex)
 # In python, these are considered as STRINGS, which we will go into later
 # Some examples of languages that have their own CHARACTER data type: C, C++, Java
 # While these characters do appear as alpha-numeric characters, in
